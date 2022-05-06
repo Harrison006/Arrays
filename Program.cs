@@ -2,13 +2,16 @@
 class Program {
     static void Main(string[] args) {
         int [] myArray = new int[10];
-        int num = 0;
-
-        Console.Write("Enter a number >");
-        num = Convert.ToInt32(Console.ReadLine());
-        myArray[0] = num;
-        Console.WriteLine(myArray[10]);
-        Console.WriteLine("\nYour Number is " + myArray[0]);
-            Console.ReadKey();
+        for (int i=0; i<10;i++)
+        {
+            Console.Write("Enter a number >");
+            myArray[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine("Here are your numbers: ");
+        for (int i=0; i<10;i++) 
+        {
+            Console.WriteLine(myArray[i]);
+        }
+        Console.ReadKey();
     }
 }
