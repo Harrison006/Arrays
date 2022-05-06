@@ -8,7 +8,7 @@ class Program {
         num = Convert.ToInt32(Console.ReadLine());
         myArray[0] = num;
         Console.WriteLine(myArray[10]);
-
+        Console.WriteLine("\nYour Number is " + myArray[0]);
             Console.ReadKey();
     }
 }
